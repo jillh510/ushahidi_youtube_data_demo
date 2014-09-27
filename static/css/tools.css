@@ -1,0 +1,8 @@
+table, th, td {
+   border: 1px solid black;
+}
+
+.add_topic_button {
+    background-color: #AAAAFF;
+    width: 75px;
+}
