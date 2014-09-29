@@ -7,7 +7,7 @@ from apiclient.errors import HttpError
 from utils import clean_db_object
 
 """ see https://console.developers.google.com/project/apps~videocategoryarcs/apiui/credential """
-YOUTUBE_V3_API_KEY = 'AIzaSyDsGmr7tSSkxT23-thZ5cBk-AInLxPCSKw'
+YOUTUBE_V3_API_KEY = 'API_KEY_HERE'
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 YOUTUBE_MAX_RESULTS = 25
