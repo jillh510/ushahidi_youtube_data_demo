@@ -4,14 +4,11 @@
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="/static/js/utils.js"></script>
       <script src="/static/js/playlist_constructor.js"></script>
-    <title>Sample Youtube Player</title>
+    <title>Videos from citizen reporters</title>
   </head>
   <body bgcolor=white>
       <h1>
       </h1>
-      <h2>
-          {{ greeting }}
-      </h2>
 
       <div id = "buttonholder">
       </div>
@@ -46,7 +43,8 @@
                                   },
                                   events: {
                                     'onReady': onPlayerReady,
-                                    'onStateChange': onPlayerStateChange
+                                    'onStateChange': onPlayerStateChange,
+                                    'onError': onPlayerError
                                   }
                               });
                             } else {
@@ -68,6 +66,13 @@
             }
             function onPlayerStateChange(event) {
               console.log('do something');
+            }
+            function onPlayerError(event) {
+              console.log('something bad');
+              if (player) {
+                  console.log('advancing');
+                  event.target.nextVideo();
+              }
             }
         </script>
       <script>

@@ -17,5 +17,5 @@ create_playlists function does simple scoring to choose the video that's found i
 
 Future improvements:
 - Using YouTube Freebase topics might improve the search results.
-- Using a completely different data corpus would involve changing the functions in playlist.py to call the
+- Using a completely different data corpus would involve changing the functions in playlists.py to call the
 different corpus rather than YouTube.
